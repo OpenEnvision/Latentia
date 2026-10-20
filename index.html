@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <title>Latentia — Where images wait to be seen.</title>
+  <meta name="description" content="万象未现之境。 Discover AI art, films and installations, with credited artists, institutions and original sources.">
+  <meta property="og:title" content="Latentia — Where images wait to be seen.">
+  <meta property="og:description" content="万象未现之境。 Explore a collection of original AI visions.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/brand/latentia-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" sizes="180x180">
+  <link rel="preload" href="assets/silence.jpg" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#collection">Skip to collection</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="#top" aria-label="Latentia home"><img class="logo-mark" src="assets/brand/latentia-mark.svg" width="32" height="32" alt="" aria-hidden="true"><span>Latentia</span></a>
+    <nav aria-label="Main navigation">
+      <a class="collection-nav" href="#collection">Collection</a>
+      <button id="films-open" type="button">Films</button>
+      <button id="about-open" type="button">About</button>
+      <a class="recommend-nav" href="recommend.html" aria-label="Recommend · 推荐作品">Recommend</a>
+      <a href="links.html" aria-label="Links · 相关链接">Links</a>
+    </nav>
+    <button class="saved-toggle" id="saved-toggle" type="button" aria-pressed="false" aria-controls="gallery-grid">
+      <span>Saved (<span id="saved-count">0</span>)</span>
+      <svg viewBox="0 0 24 28" fill="none" aria-hidden="true"><path d="M5 3h14v22l-7-5-7 5V3Z" stroke="currentColor" stroke-width="1.3"/></svg>
+    </button>
+  </header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-intro">
+        <h1 id="hero-heading"><span class="headline-line">Where images</span>
+          <span class="headline-line">wait to be <em>seen.</em></span></h1>
+        <div class="hero-side">
+          <p class="chinese-slogan" lang="zh-Hans">万象未现之境。</p>
+          <a class="explore-link" href="#collection"><span class="circle-arrow"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.2"/></svg></span><span>Explore collection</span></a>
+        </div>
+      </div>
+      <figure class="featured-work">
+        <button class="feature-image" type="button" data-open-artwork="silence" aria-label="View The shape of silence">
+          <img src="assets/silence.jpg" width="1923" height="818" fetchpriority="high" alt="A monumental peach stone ring floats over a misty volcanic coast at sunset.">
+          <span class="image-invitation" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        </button>
+        <figcaption><span class="mono">01 / The shape of silence</span><div><span class="artist-credit mono">OpenEnvision｜Latentia Studio · Original concept</span><button type="button" data-open-artwork="silence">View artwork <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.2"/></svg></button></div></figcaption>
+      </figure>
+    </section>
+    <section class="collection" id="collection" aria-labelledby="collection-heading">
+      <div class="section-heading"><h2 id="collection-heading">The collection</h2><span aria-hidden="true"></span></div>
+      <div class="collection-intro"><p>Independent visions.<br><em>Shared imagination.</em></p><p lang="zh-Hans">从潜空间到银幕，从一幅图像到一个世界。<br>循着作者的目光，看见正在发生的 AI 艺术。</p></div>
+      <div class="collection-toolbar">
+        <div class="filters" role="group" aria-label="Filter by media type">
+          <button type="button" data-type="all" aria-pressed="true">All works</button>
+          <button type="button" data-type="image" aria-pressed="false">Images <span class="type-count">28</span></button>
+          <button type="button" data-type="film" aria-pressed="false">Films <span class="type-count">36</span></button>
+          <button type="button" data-type="installation" aria-pressed="false">Installations <span class="type-count">06</span></button>
+        </div>
+        <span class="mono" id="work-count" aria-live="polite" aria-atomic="true">70 works</span>
+      </div>
+      <div class="discovery-tools"><div class="search-field"><label class="sr-only" for="collection-search">Search titles, artists, institutions, or AI tools</label><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.3"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.3"/></svg><input id="collection-search" type="search" placeholder="Search art, artists, AI tools…" autocomplete="off" spellcheck="false"><button id="search-clear" type="button" aria-label="Clear search" hidden><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.3"/></svg></button></div><div class="theme-field"><label for="theme-filter">Explore a theme</label><select id="theme-filter"><option value="all">All themes</option></select></div><div class="sort-field filter-field"><label for="browse-sort">Sort by</label><select id="browse-sort"><option value="curated">Curated order</option><option value="newest">Newest first</option><option value="duration" hidden disabled>Shortest first</option></select></div></div>
+      <div class="film-filters" id="film-filters" role="group" aria-label="Refine the film collection" hidden><div class="filter-field"><label for="film-format">Film form</label><select id="film-format"><option value="all">All film forms</option><option value="short">Short films</option><option value="music">Music &amp; dance</option><option value="process">Process studies</option></select></div><div class="filter-field"><label for="film-length">Running time</label><select id="film-length"><option value="all">Any length</option><option value="under-five">Up to 5 min</option><option value="five-ten">5–10 min</option><option value="over-ten">Over 10 min</option></select></div></div>
+      <div class="collection-status"><p class="mono" id="collection-summary">70 works across images, films, and imagined worlds.</p><button id="filter-reset" type="button" hidden>Reset filters</button></div>
+      <section class="screening-room" id="screening-room" aria-labelledby="screening-heading" hidden>
+        <div class="screening-header"><div><p class="mono">THE SCREENING ROOM</p><h3 id="screening-heading">A few minutes. <em>Another world.</em></h3></div><p lang="zh-Hans">让影像停留，让余韵发生。</p></div>
+        <div class="screening-feature" id="screening-feature"></div>
+        <div class="screening-options" id="screening-options" role="group" aria-label="Featured films"></div>
+      </section>
+      <div class="gallery-grid" id="gallery-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><h3 id="empty-title">Nothing in this corner. <em>Yet.</em></h3><p id="empty-description">Try another artist, title, or institution.</p><button id="empty-reset" type="button">Explore all works <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
+      <noscript><p>Enable JavaScript to filter the collection and open artwork details.</p><img src="assets/bloom.jpg" width="600" height="445" alt="An ivory magnolia floating in a concrete room by the sea."><img src="assets/matter.jpg" width="600" height="445" alt="A liquid silver sculpture in a terracotta studio."><img src="assets/cathedral.jpg" width="600" height="445" alt="Rose stone arches rising from the sea."></noscript>
+    </section>
+  </main>
+  <footer class="site-footer shell">
+    <div class="footer-statement"><p>An archive of the <em>not-yet-seen.</em></p><span lang="zh-Hans">万象未现之境。</span></div>
+    <div class="footer-bottom"><a class="wordmark" href="#top"><img class="logo-mark" src="assets/brand/latentia-mark.svg" width="32" height="32" alt="" aria-hidden="true"><span>Latentia</span></a><p class="mono">The AIGC platform of OpenEnvision.</p></div>
+    <p class="footer-credit">Works remain © their respective creators. Official previews and films are credited and linked to their original sources. <span lang="zh-Hans">影像有出处，创作有姓名。</span></p>
+    <p class="footer-credit footer-copyright">© 2026 OpenEnvision. All rights reserved.</p>
+  </footer>
+  <dialog class="artwork-dialog" id="artwork-dialog" aria-labelledby="detail-title" aria-describedby="detail-description">
+    <div class="dialog-top"><span class="wordmark"><img class="logo-mark" src="assets/brand/latentia-mark.svg" width="32" height="32" alt="" aria-hidden="true"><span>Latentia</span></span><button class="dialog-close" type="button" data-close aria-label="Close artwork"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
+    <div class="film-toolbar" id="film-toolbar" hidden><p class="mono" id="film-context"></p><button id="player-reload" type="button" hidden>Reload player ↻</button></div>
+    <div class="detail-stage" id="detail-media"></div>
+    <div class="detail-information"><div><p class="detail-category mono" id="detail-category"></p><h2 id="detail-title"></h2><p class="detail-zh" lang="zh-Hans" id="detail-zh"></p><p class="detail-credit" id="detail-credit"></p></div><div class="detail-story"><p id="detail-description"></p><dl class="detail-facts"><div><dt>Artist / Creator</dt><dd><a id="detail-author"></a></dd></div><div><dt id="detail-institution-role">Institution</dt><dd><a id="detail-institution"></a></dd></div><div><dt>Year</dt><dd id="detail-year"></dd></div><div><dt>Medium</dt><dd id="detail-medium"></dd></div></dl><p class="detail-production" id="detail-production" hidden></p><p class="detail-production" id="detail-technology" hidden></p><p class="detail-year-note" id="detail-year-note" hidden></p><a class="detail-source" id="detail-source" target="_blank" rel="noopener noreferrer">View original source</a><p class="detail-original-note" id="detail-original-note" hidden>OpenEnvision｜Latentia Studio · Original concept. Generated for this exhibition, separate from the credited external artists.</p></div></div>
+    <div class="detail-controls"><div class="detail-paging"><button id="detail-prev" type="button" aria-label="Previous artwork"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 12H5m6 6-6-6 6-6" stroke="currentColor" stroke-width="1.3"/></svg></button><span class="mono" id="detail-index"></span><button id="detail-next" type="button" aria-label="Next artwork"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.3"/></svg></button></div><button id="detail-save" type="button" aria-pressed="false"><span data-save-label>Save artwork</span><svg viewBox="0 0 24 28" fill="none" aria-hidden="true"><path d="M5 3h14v22l-7-5-7 5V3Z" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
+  </dialog>
+  <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-heading">
+    <div class="dialog-top"><span class="wordmark"><img class="logo-mark" src="assets/brand/latentia-mark.svg" width="32" height="32" alt="" aria-hidden="true"><span>Latentia</span></span><button class="dialog-close" type="button" data-close aria-label="Close about"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
+    <h2 id="about-heading">Before an image<br>becomes a world,<br><em>it waits here.</em></h2>
+    <p class="about-chinese" lang="zh-Hans">万象未现之境。</p>
+    <div class="about-copy"><p>Latentia is OpenEnvision’s platform for AI image art, short films, and human–machine collaboration. A place to discover imagined worlds and the people who bring them into view.</p><p lang="zh-Hans">Latentia 隶属于 OpenEnvision，关注 AI 图像艺术、微电影与人机共创。在这里，尚未抵达现实的影像与创造它们的人，一同进入视野。</p><section class="about-section"><h3>Authorship &amp; provenance</h3><p>OpenEnvision’s original concept studies for Latentia carry the credit <span class="about-signature">OpenEnvision｜Latentia Studio · Original concept</span>Every curated external work names its creator, identifies the associated institution’s role, and links to an artist, producer, or official exhibition source. Rights remain with the credited creators. Chinese titles are curatorial translations when an official Chinese title is unavailable.</p><p lang="zh-Hans">原创概念作品由 OpenEnvision 为 Latentia 创作并单独标注。外部作品保留创作者署名与官方来源；机构按制作、委托、展出、收藏或技术合作等实际角色标识。无官方中文标题时，中文名称为策展译名。</p></section><section class="about-section"><h3>Viewing &amp; your collection</h3><p>Image previews are stored with this local edition. Films play through official sources and require an internet connection, with a direct link to the original player alongside each film. Save works to return to the images and stories that stay with you. Your saved collection is kept locally in this browser.</p><p lang="zh-Hans">本地版可直接查看作品预览；影片由官方来源在线播放，需要联网，并始终保留原始播放入口。收藏保存在当前浏览器中，方便你再次回到那些想继续看的作品。</p></section></div>
+  </dialog>
+  <div class="status-message" id="status-message" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <title>推荐作品 · Recommend — Latentia</title>
+  <meta name="description" content="向 OpenEnvision 旗下 Latentia 推荐优秀的 AI 图像艺术与微电影。让好的作品，连同创作者的名字，一起被看见。">
+  <link rel="icon" href="assets/brand/latentia-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="recommend.css">
+  <script src="recommend-translations.js" defer></script>
+  <script src="recommend.js" defer></script>
+</head>
+<body id="top" class="recommend-page">
+  <a class="skip-link" href="#recommend-form" data-i18n="skip">跳转至推荐表单</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="index.html" aria-label="Latentia home" data-i18n-aria="a11y.home"><img class="logo-mark" src="assets/brand/latentia-mark.svg" width="32" height="32" alt="" aria-hidden="true"><span>Latentia</span></a>
+    <nav aria-label="Main navigation" data-i18n-aria="a11y.nav">
+      <a class="collection-nav" href="index.html#collection" data-i18n="nav.collection">Collection</a>
+      <a href="index.html#films" data-i18n="nav.films">Films</a>
+      <a href="index.html#about" data-i18n="nav.about">About</a>
+      <a class="recommend-nav" href="recommend.html" aria-current="page" aria-label="Recommend · 推荐作品" data-i18n="nav.recommend" data-i18n-aria="a11y.recommend">Recommend</a>
+      <a href="links.html" data-i18n="nav.links">相关链接</a>
+    </nav>
+    <a class="return-link" href="index.html#collection"><span data-i18n="nav.back">Back to collection</span><span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="shell">
+    <section class="recommend-intro" aria-labelledby="recommend-heading">
+      <div class="recommend-intro-tools"><p class="recommend-eyebrow mono" data-i18n="intro.eyebrow">OPENENVISION / AN OPEN INVITATION</p><div class="language-switch" id="language-switch" role="group" aria-label="语言 / Language" data-i18n-aria="a11y.language" hidden><button type="button" data-language="zh" aria-pressed="true" lang="zh-Hans">中文</button><span aria-hidden="true">/</span><button type="button" data-language="en" aria-pressed="false" lang="en">English</button></div></div>
+      <p class="language-status sr-only" id="language-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div class="recommend-heading-row">
+        <h1 id="recommend-heading"><span data-i18n="hero.first">好作品，值得</span><br><span data-i18n="hero.second">被</span><em data-i18n="hero.emphasis">看见。</em></h1>
+        <div class="recommend-lead"><p class="recommend-chinese" data-i18n="intro.tagline">推荐，让好作品被看见。</p><p data-i18n="intro.description">一幅令人驻足的图像，一部值得回味的 AI 微电影。把它推荐给 Latentia，让作品和创作者一起进入视野。</p><a class="recommend-jump" href="#recommend-form"><span data-i18n="intro.jump">推荐一件作品</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+    <div class="recommend-layout">
+      <aside class="recommend-aside" aria-labelledby="invitation-heading">
+        <figure class="recommend-art"><img src="assets/bloom.jpg" width="1457" height="1080" alt="一枝象牙白玉兰悬浮于海边的混凝土空间。" data-i18n-alt="image.alt" fetchpriority="high"><figcaption class="mono">OpenEnvision / Memory in bloom<br>Latentia Studio · Original concept</figcaption></figure>
+        <h2 id="invitation-heading"><span data-i18n="side.heading.first">下一件被看见的作品，</span><br><span data-i18n="side.heading.second">也许来自你的推荐。</span></h2>
+        <p data-i18n="side.description">欢迎推荐自己的创作，也欢迎分享你欣赏的艺术家。我们关注 AI 图像、微电影、音乐影像、生成艺术与跨媒介实验。</p>
+        <div class="recommend-guidance"><p class="mono" data-i18n="side.guidance">A FEW THINGS TO INCLUDE</p><ul><li data-i18n="side.author">让我们认识作者：姓名或艺名，以及相关机构。</li><li data-i18n="side.process">让我们理解作品：创作意图、技术、模型与时间。</li><li data-i18n="side.source">让我们找到出处：可公开访问的作者或机构官方链接。</li></ul></div>
+        <p class="recommend-rights" data-i18n="side.rights">Latentia 隶属于 OpenEnvision。推荐不等同于入选或授权；作品版权始终归原创作者所有。图像与视频请提供链接；如需附文件，可在邮件应用中添加。</p>
+        <a class="recommend-address" href="mailto:openenvision.lab@gmail.com">openenvision.lab@gmail.com <span aria-hidden="true">↗</span></a>
+      </aside>
+      <div class="recommend-form-column">
+        <div class="recommend-form-title"><h2 data-i18n="form.heading">推荐作品</h2><p class="mono"><span data-i18n="form.eyebrow">RECOMMEND A WORK</span> / <span aria-hidden="true">*</span> <span data-i18n="form.required">必填</span></p></div>
+        <noscript><p class="recommend-notice">请启用 JavaScript 切换语言并生成推荐邮件，或直接发送作品信息至 <a href="mailto:openenvision.lab@gmail.com">openenvision.lab@gmail.com</a>。<br><span lang="en">Enable JavaScript to switch languages and prepare a recommendation, or email your work directly to the address above.</span></p></noscript>
+        <form id="recommend-form" novalidate>
+          <fieldset disabled>
+            <legend><span class="mono">01</span><span data-i18n="section.you">关于你</span><span class="section-translation" lang="en">About you</span></legend>
+            <div class="recommend-fields">
+              <div class="recommend-field"><label for="recommender"><span data-i18n="label.recommender">您的姓名／艺名</span> <span>*</span></label><input id="recommender" name="recommender" required maxlength="80" autocomplete="name" placeholder="希望我们如何称呼你" data-i18n-placeholder="placeholder.recommender"></div>
+              <div class="recommend-field"><label for="contact"><span data-i18n="label.contact">联系邮箱</span> <span class="optional" data-i18n="form.optional">选填</span></label><input id="contact" name="contact" type="email" maxlength="160" autocomplete="email" placeholder="方便我们与你联系" data-i18n-placeholder="placeholder.contact" aria-describedby="contact-hint"><p class="field-hint" id="contact-hint" data-i18n="hint.contact">如希望收到回复，请留下联系邮箱。</p></div>
+              <div class="recommend-field full-width"><label for="relationship"><span data-i18n="label.relationship">您与作品的关系</span> <span>*</span></label><select id="relationship" name="relationship" required><option value="creator" data-i18n="relationship.creator">我是创作者／创作团队成员</option><option value="recommender" data-i18n="relationship.recommender">我在推荐他人的作品</option></select></div>
+            </div>
+          </fieldset>
+          <fieldset disabled>
+            <legend><span class="mono">02</span><span data-i18n="section.work">关于作品</span><span class="section-translation" lang="en">The work</span></legend>
+            <div class="recommend-fields">
+              <div class="recommend-field full-width"><label for="work-title"><span data-i18n="label.title">艺术品名称</span> <span>*</span></label><input id="work-title" name="title" required maxlength="140" placeholder="作品的原名，可附中文译名" data-i18n-placeholder="placeholder.title"></div>
+              <div class="recommend-field"><label for="creator"><span data-i18n="label.creator">作品作者／艺名</span> <span>*</span></label><input id="creator" name="creator" required maxlength="120" placeholder="准确的创作者署名" data-i18n-placeholder="placeholder.creator"></div>
+              <div class="recommend-field"><label for="institution"><span data-i18n="label.institution">机构／团队</span> <span class="optional" data-i18n="form.optional">选填</span></label><input id="institution" name="institution" maxlength="160" placeholder="名称及角色，如制作、委托、技术合作" data-i18n-placeholder="placeholder.institution"></div>
+              <div class="recommend-field"><label for="medium"><span data-i18n="label.medium">作品类型</span> <span>*</span></label><select id="medium" name="medium" required><option value="" data-i18n="medium.choose">选择作品类型</option><option value="image" data-i18n="medium.image">AIGC 图像艺术</option><option value="film" data-i18n="medium.film">AI 微电影／短片</option><option value="music" data-i18n="medium.music">AI 音乐／舞蹈影像</option><option value="installation" data-i18n="medium.installation">生成艺术／装置／交互</option><option value="other" data-i18n="medium.other">其他跨媒介作品</option></select></div>
+              <div class="recommend-field"><label for="created"><span data-i18n="label.created">创作时间</span> <span>*</span></label><input id="created" name="created" required maxlength="60" placeholder="如 2026、2026-10，或创作起止时间" data-i18n-placeholder="placeholder.created"></div>
+              <div class="recommend-field full-width"><label for="description"><span data-i18n="label.description">作品介绍</span> <span>*</span></label><textarea id="description" name="description" required maxlength="1000" rows="5" placeholder="讲述作品的主题、故事、创作意图，或你推荐它的原因。" data-i18n-placeholder="placeholder.description" aria-describedby="description-hint"></textarea><p class="field-hint" id="description-hint" data-i18n="hint.description">最多 1,000 字符，中英文均可。</p></div>
+              <div class="recommend-field full-width"><label for="technology"><span data-i18n="label.technology">使用的技术／模型</span> <span>*</span></label><textarea id="technology" name="technology" required maxlength="400" rows="2" placeholder="模型、工具、版本与制作方式；如使用剪辑、合成或实拍，也请说明。无法确认时可填写「未公开」。" data-i18n-placeholder="placeholder.technology"></textarea></div>
+              <div class="recommend-field full-width"><label for="work-url"><span data-i18n="label.workUrl">作品官方链接</span> <span>*</span></label><input id="work-url" name="workUrl" type="url" required maxlength="1200" placeholder="https://" aria-describedby="work-url-hint"><p class="field-hint" id="work-url-hint" data-i18n="hint.workUrl">作者、制作方、机构官网或其官方视频／作品页面。</p></div>
+            </div>
+          </fieldset>
+          <fieldset disabled>
+            <legend><span class="mono">03</span><span data-i18n="section.more">补充信息</span><span class="section-translation" lang="en">A little more</span></legend>
+            <div class="recommend-fields">
+              <div class="recommend-field"><label for="specifications"><span data-i18n="label.specifications">时长／尺寸</span> <span class="optional" data-i18n="form.optional">选填</span></label><input id="specifications" name="specifications" maxlength="100" placeholder="如 04:32、3840 × 2160 px" data-i18n-placeholder="placeholder.specifications"></div>
+              <div class="recommend-field"><label for="creator-url"><span data-i18n="label.creatorUrl">作者／机构主页</span> <span class="optional" data-i18n="form.optional">选填</span></label><input id="creator-url" name="creatorUrl" type="url" maxlength="1200" placeholder="https://"></div>
+              <div class="recommend-field full-width"><label for="notes"><span data-i18n="label.notes">其他想告诉我们的</span> <span class="optional" data-i18n="form.optional">选填</span></label><textarea id="notes" name="notes" rows="3" maxlength="600" placeholder="完整创作名单、展映信息、观看提示，或其他补充。" data-i18n-placeholder="placeholder.notes"></textarea></div>
+            </div>
+          </fieldset>
+          <fieldset class="recommend-submit" disabled>
+            <legend class="sr-only" data-i18n="section.submit">生成邮件草稿</legend>
+            <p><span data-i18n="form.submitIntroBefore">信息会整理为发往 </span><strong>openenvision.lab@gmail.com</strong><span data-i18n="form.submitIntroAfter"> 的邮件草稿。你可以先预览，再在邮件应用中确认发送。</span></p>
+            <button class="recommend-primary" type="submit"><span data-i18n="form.preview">预览推荐邮件</span><span aria-hidden="true">↗</span></button>
+            <p class="field-hint" data-i18n="form.privacy">此页面不会自动发送邮件，也不会将表单保存到浏览器。</p>
+          </fieldset>
+        </form>
+        <section class="mail-preview" id="mail-preview" aria-labelledby="mail-preview-heading" tabindex="-1" hidden>
+          <p class="recommend-eyebrow mono" data-i18n="preview.eyebrow">READY WHEN YOU ARE / 邮件草稿已生成</p>
+          <h2 id="mail-preview-heading" data-i18n="preview.heading">让作品，抵达我们。</h2>
+          <p class="preview-explanation" data-i18n="preview.explanation">请核对下方信息。打开邮件应用后，仍需由你点击「发送」。若应用未打开或内容不完整，可复制全部内容，或下载文本后手动发送。</p>
+          <div class="recommend-field"><label for="mail-recipient" data-i18n="label.recipient">收件人</label><input id="mail-recipient" readonly value="openenvision.lab@gmail.com"></div>
+          <div class="recommend-field"><label for="mail-subject" data-i18n="label.subject">邮件主题</label><input id="mail-subject" readonly></div>
+          <div class="recommend-field"><label for="mail-body" data-i18n="label.body">推荐内容</label><textarea id="mail-body" rows="16" readonly spellcheck="false"></textarea></div>
+          <p class="recommend-notice" id="mail-length-note" hidden data-i18n="preview.long">推荐信息较长，部分邮件应用可能无法完整读取。建议使用「复制全部内容」或「下载 .txt」，再粘贴到邮件中发送。</p>
+          <div class="mail-actions"><a class="recommend-primary" id="mail-open"><span data-i18n="preview.open">打开邮件应用</span><span aria-hidden="true">↗</span></a><button class="recommend-secondary" id="mail-copy" type="button" data-i18n="preview.copy">复制全部内容</button><a class="recommend-secondary" id="mail-download" download="Latentia-recommendation.txt"><span data-i18n="preview.download">下载 .txt</span><span aria-hidden="true">↓</span></a></div>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer shell">
+    <div class="footer-statement"><p>An archive of the <em>not-yet-seen.</em></p><span>万象未现之境。</span></div>
+    <div class="footer-bottom"><a class="wordmark" href="index.html"><img class="logo-mark" src="assets/brand/latentia-mark.svg" width="32" height="32" alt="" aria-hidden="true"><span>Latentia</span></a><p class="mono">The AIGC platform of OpenEnvision.</p></div>
+    <p class="footer-credit">Works remain © their respective creators. Official previews and films are credited and linked to their original sources. <span>影像有出处，创作有姓名。</span></p>
+    <p class="footer-credit footer-copyright">© 2026 OpenEnvision. All rights reserved.</p>
+  </footer>
+</body>
+</html>
