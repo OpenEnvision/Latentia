@@ -13,7 +13,7 @@
   const empty = document.getElementById('links-empty');
   const languageStatus = document.getElementById('language-status');
   const copy = {
-    zh: { title: '相关链接 · Links — Latentia', description: '由 OpenEnvision 旗下 Latentia 精选的全球 AIGC 艺术社区、AI 微电影展映、艺术策展与创作资源。', search: '搜索平台、影片、模型、工作流…', searchLabel: '搜索相关平台', clear: '清除搜索', nav: '主导航', home: 'Latentia 首页', resources: '精选相关平台', categories: '按平台类别筛选', changed: '语言已切换，筛选与搜索已保留。', count: (n) => `${n} / ${cards.length} 个精选平台`, newTab: '在新标签页打开官网' },
+    zh: { title: '相關鏈接 · Links — Latentia', description: '由 OpenEnvision 旗下 Latentia 精選的全球 AIGC 藝術社區、AI 微電影展映、藝術策展與創作資源。', search: '搜索平台、影片、模型、工作流…', searchLabel: '搜索相關平台', clear: '清除搜索', nav: '主導航', home: 'Latentia 首頁', resources: '精選相關平台', categories: '按平台類別篩選', changed: '語言已切換，篩選與搜索已保留。', count: (n) => `${n} / ${cards.length} 個精選平台`, newTab: '在新標籤頁打開官網' },
     en: { title: 'Related links — Latentia', description: 'AI art communities, film showcases, curated exhibitions and creative resources from around the world, selected by Latentia, part of OpenEnvision.', search: 'Search platforms, films, models, workflows…', searchLabel: 'Search related platforms', clear: 'Clear search', nav: 'Main navigation', home: 'Latentia home', resources: 'Selected related platforms', categories: 'Filter by platform category', changed: 'Language changed. Your search and filters have been kept.', count: (n) => `${n} / ${cards.length} selected platforms`, newTab: 'Open the official website in a new tab' }
   };
   let language = 'zh';
@@ -50,7 +50,7 @@
     if (!['zh', 'en'].includes(next)) return;
     language = next;
     const strings = copy[language];
-    document.documentElement.lang = language === 'zh' ? 'zh-Hans' : 'en';
+    document.documentElement.lang = language === 'zh' ? 'zh-Hant' : 'en';
     document.title = strings.title;
     document.querySelector('meta[name="description"]').content = strings.description;
     document.querySelectorAll('[data-zh][data-en]').forEach((element) => { element.textContent = element.dataset[language]; });

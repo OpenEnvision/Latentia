@@ -4,7 +4,7 @@
   const TYPE_LABELS = { image: 'Image', film: 'Film', installation: 'Installation' };
   const FILM_FORMS = { short: 'Short films', music: 'Music & dance', process: 'Process studies' };
   const LENGTH_LABELS = { 'under-five': 'Up to 5 min', 'five-ten': '5–10 min', 'over-ten': 'Over 10 min' };
-  const FEATURED_FILM_IDS = ['tale-of-the-peony', 'more-tears-than-harm', 'love-at-first-sight'];
+  const FEATURED_FILM_IDS = ['a-face-only-a-mother-could-love', 'tale-of-the-peony', 'witch-olivia-qiu'];
   const artworkById = new Map();
   const artworks = (Array.isArray(window.LATENTIA_ARTWORKS) ? window.LATENTIA_ARTWORKS : []).filter((work) => {
     if (!work || typeof work.id !== 'string' || !work.id || artworkById.has(work.id)) return false;
@@ -40,6 +40,16 @@
     try {
       const url = new URL(value, window.location.href);
       return ['https:', 'http:'].includes(url.protocol) ? url.href : '';
+    } catch { return ''; }
+  }
+  function safeImageUrl(value) {
+    const webUrl = safeUrl(value);
+    if (webUrl || window.location.protocol !== 'file:') return webUrl;
+    if (typeof value !== 'string' || !value.trim()) return '';
+    try {
+      const directory = new URL('./', window.location.href);
+      const url = new URL(value, directory);
+      return url.protocol === 'file:' && !url.host && url.href.startsWith(directory.href) ? url.href : '';
     } catch { return ''; }
   }
   function setLink(link, label, value) {
@@ -137,6 +147,7 @@
     let savedOnly = false;
     let selectedId = artworks[0]?.id || '';
     let visible = [];
+    let detailWorks = [];
     let statusTimer;
     let searchTimer;
     let mediaRevision = 0;
@@ -178,11 +189,11 @@
         if (!host.contains(image)) return;
         image.hidden = true;
         host.classList.add('media-failed');
-        if (!host.querySelector('.media-error')) host.append(node('span', 'media-error', 'Preview unavailable · 预览暂不可用'));
+        if (!host.querySelector('.media-error')) host.append(node('span', 'media-error', 'Preview unavailable · 預覽暫不可用'));
       };
       image.addEventListener('error', fail, { once: true });
       host.append(image);
-      const src = safeUrl(work.image);
+      const src = safeImageUrl(work.image);
       if (src) image.src = src;
       else fail();
       return image;
@@ -202,13 +213,13 @@
       const metadata = node('p', 'screening-meta mono', [work.year, work.duration, work.category].filter(Boolean).join(' · '));
       const title = node('h4', 'screening-title', work.title);
       const subtitle = node('p', 'screening-subtitle', work.zh);
-      subtitle.lang = 'zh-Hans';
+      subtitle.lang = 'zh-Hant';
       const author = node('p', 'screening-author');
       author.append(credit(work.author, work.authorUrl));
       const institution = node('p', 'screening-institution', `${work.institutionRole} · `);
       institution.append(credit(work.institution, work.institutionUrl));
       const description = node('p', 'screening-description', work.descriptionZh || work.description);
-      description.lang = work.descriptionZh ? 'zh-Hans' : 'en';
+      description.lang = work.descriptionZh ? 'zh-Hant' : 'en';
       const source = credit('Official source ↗', work.sourceUrl || work.video.watchUrl);
       source.className = 'screening-source';
       info.append(metadata, title, subtitle, author, institution, description, source);
@@ -265,7 +276,7 @@
       text.append(title, author, institution, meta);
       if (work.type === 'film' && (work.descriptionZh || work.description)) {
         const synopsis = node('p', 'artwork-synopsis', work.descriptionZh || work.description);
-        synopsis.lang = work.descriptionZh ? 'zh-Hans' : 'en';
+        synopsis.lang = work.descriptionZh ? 'zh-Hant' : 'en';
         text.append(synopsis);
       }
       const save = node('button', 'save-button');
@@ -329,15 +340,12 @@
       (target || savedToggle || typeButtons[0] || searchInput)?.focus({ preventScroll: true });
     }
     function navigationWorks() {
-      const selected = artworkById.get(selectedId);
-      const works = selected?.type === 'film' ? visible.filter((work) => work.type === 'film') : visible;
-      if (works.length) return works;
-      return selected ? [selected] : [];
+      return detailWorks;
     }
     function syncDetailNavigation() {
       const works = navigationWorks();
       const index = works.findIndex((work) => work.id === selectedId);
-      const isFilm = artworkById.get(selectedId)?.type === 'film';
+      const isFilm = works.length > 0 && works.every((work) => work.type === 'film');
       if (detailIndex) detailIndex.textContent = `${index < 0 ? '—' : String(index + 1).padStart(2, '0')} / ${String(works.length).padStart(2, '0')}${isFilm ? (works.length === 1 ? ' film' : ' films') : ''}`;
       const disabled = !works.length || (works.length === 1 && works[0].id === selectedId);
       if (detailPrev) {
@@ -444,7 +452,7 @@
         video.controls = true;
         video.playsInline = true;
         video.preload = 'metadata';
-        video.poster = safeUrl(work.image);
+        video.poster = safeImageUrl(work.image);
         video.setAttribute('aria-label', `${work.title}, a film by ${work.author}`);
         video.addEventListener('error', () => failed(video), { once: true });
         video.src = src;
@@ -538,6 +546,9 @@
     }
     function openArtwork(id, opener) {
       if (!artworkById.has(id) || !detailDialog) return;
+      // Keep the opening collection order throughout this detail session.
+      const scope = opener?.closest('.screening-room') ? visible.filter((work) => work.type === 'film') : visible;
+      detailWorks = scope.some((work) => work.id === id) ? scope.slice() : [artworkById.get(id)];
       selectedId = id;
       updateDetail();
       if (!detailDialog.open) {

@@ -110,7 +110,7 @@
     const hadPreview = !preview.hidden;
     invalidatePreview();
     language = nextLanguage;
-    document.documentElement.lang = language === 'zh' ? 'zh-Hans' : 'en';
+    document.documentElement.lang = language === 'zh' ? 'zh-Hant' : 'en';
     document.title = t('page.title');
     document.querySelector('meta[name="description"]').content = t('page.description');
     document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = t(element.dataset.i18n); });

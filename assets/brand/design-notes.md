@@ -1,6 +1,6 @@
 # Latentia · The latent frame
 
-“Where images wait to be seen.” / “万象未现之境。”
+“Where images wait to be seen.” / “萬象未現之境。”
 
 The symbol pairs a dominant L with a detached upper-right corner. Their negative space suggests an image frame that has not fully appeared. The contrast between the grounded L and the smaller floating corner is intentional.
 

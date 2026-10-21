@@ -155,7 +155,7 @@ input:focus-visible,select:focus-visible{outline:1px solid var(--accent);outline
 .artwork-dialog .detail-controls{position:sticky;bottom:-24px;z-index:3;background:var(--bg);margin-inline:-30px;padding:14px 30px 24px;box-shadow:0 -8px 18px #10110fdd}
 .about-dialog .dialog-top{position:sticky;top:0;z-index:4;background:var(--bg);padding-block:5px 12px}
 .about-copy{max-width:600px;font-size:13px;line-height:1.85}
-.about-copy p[lang=zh-Hans]{color:#c2c5bb}
+.about-copy p[lang=zh-Hant]{color:#c2c5bb}
 .about-section{border-top:1px solid #383b33;margin-top:28px;padding-top:23px}
 .about-section h3{font-size:19px;font-weight:400;letter-spacing:-.02em;color:var(--ink);margin-bottom:14px}
 .about-signature{display:block;font:11px/1.8 var(--mono);color:var(--accent);margin:13px 0;overflow-wrap:anywhere}

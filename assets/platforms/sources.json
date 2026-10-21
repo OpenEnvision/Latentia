@@ -5,15 +5,15 @@
     {
       "id": "flick",
       "category": "film",
-      "keywords": "电影 视频 filmmaker canvas workflow 工具",
+      "keywords": "電影 視頻 filmmaker canvas workflow 工具",
       "url": "https://flick.art/",
       "type": [
-        "AI 电影创作 · 官方展映",
+        "AI 電影創作 · 官方展映",
         "Filmmaking platform · Showcase"
       ],
       "name": "Flick",
       "description": [
-        "从故事、角色到镜头与剪辑，在同一画布探索 AI 电影创作，也可以从官网的创作者短片开始观看。",
+        "從故事、角色到鏡頭與剪輯，在同一畫布探索 AI 電影創作，也可以從官網的創作者短片開始觀看。",
         "Explore AI filmmaking on a shared canvas for stories, characters, shots and edits. Start with the creator films showcased on the official site."
       ],
       "domain": "flick.art",
@@ -22,7 +22,7 @@
         "https://flick.art/"
       ],
       "access": [
-        "公开浏览 · 创作需账号",
+        "公開瀏覽 · 創作需賬號",
         "Browse publicly · Account to create"
       ],
       "logo": {
@@ -44,15 +44,15 @@
     {
       "id": "liblib",
       "category": "community",
-      "keywords": "哩布哩布 中文 中国 Chinese ComfyUI LoRA 模型 model 生成图像",
+      "keywords": "哩布哩布 中文 中國 Chinese ComfyUI LoRA 模型 model 生成圖像",
       "url": "https://www.liblib.art/",
       "type": [
-        "中文创作社区 · 模型与工作流",
+        "中文創作社區 · 模型與工作流",
         "Chinese creator community · Workflows"
       ],
       "name": "LiblibAI",
       "description": [
-        "浏览中文创作者的图像灵感、模型与工作流，从风格插画、摄影到空间设计，寻找作品背后的制作线索。",
+        "瀏覽中文創作者的圖像靈感、模型與工作流，從風格插畫、攝影到空間設計，尋找作品背後的製作線索。",
         "Explore images, models and workflows shared by Chinese-speaking creators, from illustration and photography to spatial design."
       ],
       "domain": "liblib.art",
@@ -61,7 +61,7 @@
         "https://www.liblib.art/"
       ],
       "access": [
-        "公开浏览 · 创作需账号",
+        "公開瀏覽 · 創作需賬號",
         "Browse publicly · Account to create"
       ],
       "logo": {
@@ -83,15 +83,15 @@
     {
       "id": "runway",
       "category": "film",
-      "keywords": "Runway AIFF screening room 微电影 短片 获奖",
+      "keywords": "Runway AIFF screening room 微電影 短片 獲獎",
       "url": "https://aif.runwayml.com/screening-room",
       "type": [
-        "电影节 · 放映档案",
+        "電影節 · 放映檔案",
         "Film festival · Screening archive"
       ],
       "name": "Runway AIF",
       "description": [
-        "按届次观看 AI 电影节获奖短片，认识导演，阅读作品简介，也可探索影人与创作者的对谈。",
+        "按屆次觀看 AI 電影節獲獎短片，認識導演，閱讀作品簡介，也可探索影人與創作者的對談。",
         "Watch award-winning AI shorts by festival edition, discover their directors and stories, and explore conversations with filmmakers."
       ],
       "domain": "aif.runwayml.com",
@@ -100,7 +100,7 @@
         "https://aif.runwayml.com/screening-room"
       ],
       "access": [
-        "公开作品与官方档案",
+        "公開作品與官方檔案",
         "Public works & official archive"
       ],
       "logo": {
@@ -127,20 +127,20 @@
       "url": "https://tusi.cn/posts",
       "domain": "tusi.cn",
       "type": [
-        "模型与作品社区",
+        "模型與作品社區",
         "Model & art community"
       ],
       "description": [
-        "从插画、国风到建筑概念，按主题发现创作者作品，继续探索关联模型、工作流和实用教程。",
+        "從插畫、國風到建築概念，按主題發現創作者作品，繼續探索關聯模型、工作流和實用教程。",
         "Discover illustration, Chinese-inspired imagery and architectural concepts, then explore the models, workflows and tutorials behind a creative practice."
       ],
-      "keywords": "吐司 TusiArt tusi 模型 LoRA ComfyUI 工作流 AI图像 illustration models workflows",
+      "keywords": "吐司 TusiArt tusi 模型 LoRA ComfyUI 工作流 AI圖像 illustration models workflows",
       "sourceUrls": [
         "https://tusi.cn/posts",
         "https://tusi.cn/about/about"
       ],
       "access": [
-        "作品分类公开浏览；创作与互动需账号。",
+        "作品分類公開瀏覽；創作與互動需賬號。",
         "Public art categories; an account is required to create and interact."
       ],
       "logo": {
@@ -162,15 +162,15 @@
     {
       "id": "curious-refuge",
       "category": "film",
-      "keywords": "AI film gallery 动画 animation 电影 filmmaking 社区",
+      "keywords": "AI film gallery 動畫 animation 電影 filmmaking 社區",
       "url": "https://curiousrefuge.com/ai-film-gallery",
       "type": [
-        "创作者社区 · 影像画廊",
+        "創作者社區 · 影像畫廊",
         "Creator community · Film gallery"
       ],
       "name": "Curious Refuge",
       "description": [
-        "汇集全球创作者的 AI 短片、动画与影像实验，也包含预告和短视频。平台同时提供课程与会员社区。",
+        "匯集全球創作者的 AI 短片、動畫與影像實驗，也包含預告和短視頻。平台同時提供課程與會員社區。",
         "Explore AI shorts, animation and visual experiments from creators worldwide, alongside trailers and reels. The platform also offers courses and a membership community."
       ],
       "domain": "curiousrefuge.com",
@@ -179,7 +179,7 @@
         "https://curiousrefuge.com/ai-film-gallery"
       ],
       "access": [
-        "公开画廊 · 含短片与预告",
+        "公開畫廊 · 含短片與預告",
         "Public gallery · Shorts & trailers"
       ],
       "logo": {
@@ -206,20 +206,20 @@
       "url": "https://www.zcool.com.cn/ai",
       "domain": "zcool.com.cn",
       "type": [
-        "设计社区与工作流",
+        "設計社區與工作流",
         "Design community & workflows"
       ],
       "description": [
-        "在中文设计社区查看 AI 作品、提示词和工作流，按影视、动画、海报与绘画方向寻找灵感和学习案例。",
+        "在中文設計社區查看 AI 作品、提示詞和工作流，按影視、動畫、海報與繪畫方向尋找靈感和學習案例。",
         "Explore AI artwork, prompts and workflows in a Chinese design community, with inspiration and practical examples across film, animation, posters and painting."
       ],
-      "keywords": "站酷 ZCOOL AI圈 设计 工作流 影视 动画 海报 prompts design workflows",
+      "keywords": "站酷 ZCOOL AI圈 設計 工作流 影視 動畫 海報 prompts design workflows",
       "sourceUrls": [
         "https://www.zcool.com.cn/ai",
         "https://www.zcool.com.cn/article/ZMTY3ODk2OA%3D%3D.html"
       ],
       "access": [
-        "公开内容可浏览；分享、互动和创作需账号。",
+        "公開內容可瀏覽；分享、互動和創作需賬號。",
         "Browse public content; an account is required to share, interact and create."
       ],
       "logo": {
@@ -246,20 +246,20 @@
       "url": "https://aiff.hkust.edu.hk/",
       "domain": "aiff.hkust.edu.hk",
       "type": [
-        "AI 电影节与获奖档案",
+        "AI 電影節與獲獎檔案",
         "AI film festival & award archive"
       ],
       "description": [
-        "香港科技大学主办的 AI 电影节官方入口，可查阅节目安排、获奖影片与导演姓名，持续关注人机协作的影像叙事。",
+        "香港科技大學主辦的 AI 電影節官方入口，可查閱節目安排、獲獎影片與導演姓名，持續關注人機協作的影像敘事。",
         "The official HKUST AI Film Festival site brings together programmes, awarded films and directors’ credits, tracing approaches to human–AI cinematic storytelling."
       ],
-      "keywords": "HKUST AIFF 香港科技大学 港科大 AI电影节 微电影 AI film festival laureates screenings Hong Kong",
+      "keywords": "HKUST AIFF 香港科技大學 港科大 AI電影節 微電影 AI film festival laureates screenings Hong Kong",
       "sourceUrls": [
         "https://aiff.hkust.edu.hk/",
         "https://geco.hkust.edu.hk/sites/default/files/download/media/20260519AIFF/Bilingual_list_of_awardees.pdf"
       ],
       "access": [
-        "节目与获奖档案公开；部分影片通过外部来源观看。",
+        "節目與獲獎檔案公開；部分影片通過外部來源觀看。",
         "Public programme and award archive; some films are accessed through external sources."
       ],
       "logo": {
@@ -274,22 +274,22 @@
       },
       "checkedAt": "2026-10-20",
       "displayName": [
-        "港科大 AI 电影节",
+        "港科大 AI 電影節",
         "HKUST AI Film Festival"
       ]
     },
     {
       "id": "nightcafe",
       "category": "community",
-      "keywords": "图像 images prompts 提示词 challenge 主题挑战",
+      "keywords": "圖像 images prompts 提示詞 challenge 主題挑戰",
       "url": "https://creator.nightcafe.studio/explore",
       "type": [
-        "AI 艺术 · 创作社区",
+        "AI 藝術 · 創作社區",
         "AI art · Creator community"
       ],
       "name": "NightCafe",
       "description": [
-        "从公开作品画廊发现创作者，浏览不同风格的 AI 图像，并通过每日主题挑战寻找新的创作方向。",
+        "從公開作品畫廊發現創作者，瀏覽不同風格的 AI 圖像，並通過每日主題挑戰尋找新的創作方向。",
         "Discover creators in a public AI art gallery, explore different visual styles and find fresh ideas through daily themed challenges."
       ],
       "domain": "creator.nightcafe.studio",
@@ -298,7 +298,7 @@
         "https://creator.nightcafe.studio/explore"
       ],
       "access": [
-        "公开浏览 · 创作需账号",
+        "公開瀏覽 · 創作需賬號",
         "Browse publicly · Account to create"
       ],
       "logo": {
@@ -319,26 +319,26 @@
     },
     {
       "id": "jimeng-visionary",
-      "name": "即梦 · 未来影像计划",
+      "name": "即夢 · 未來影像計劃",
       "category": "film",
       "region": "zh",
       "url": "https://jimeng.jianying.com/visionary",
       "domain": "jimeng.jianying.com",
       "type": [
-        "获奖作品与创作计划",
+        "獲獎作品與創作計劃",
         "Awarded work & creative initiatives"
       ],
       "description": [
-        "通过官方获奖作品与作者自述，发现数字艺术、实验动画和 AI 影像创作，也可了解面向创作者的影像计划。",
+        "通過官方獲獎作品與作者自述，發現數字藝術、實驗動畫和 AI 影像創作，也可瞭解面向創作者的影像計劃。",
         "Discover digital art, experimental animation and AI moving images through official awarded work and artists’ statements, alongside creative initiatives."
       ],
-      "keywords": "即梦 未来影像计划 Jimeng Dreamina Visionary 数字艺术 实验动画 获奖作品 film awards",
+      "keywords": "即夢 未來影像計劃 Jimeng Dreamina Visionary 數字藝術 實驗動畫 獲獎作品 film awards",
       "sourceUrls": [
         "https://jimeng.jianying.com/visionary",
         "https://jimeng.jianying.com/"
       ],
       "access": [
-        "获奖作品介绍公开浏览；进入创作工具需账号。",
+        "獲獎作品介紹公開瀏覽；進入創作工具需賬號。",
         "Awarded-work introductions are public; creative tools require an account."
       ],
       "logo": {
@@ -353,22 +353,22 @@
       },
       "checkedAt": "2026-10-20",
       "displayName": [
-        "即梦 · 未来影像计划",
+        "即夢 · 未來影像計劃",
         "Jimeng · Visionary"
       ]
     },
     {
       "id": "daily",
       "category": "curation",
-      "keywords": "Fellowship fellowship.xyz 策展 gallery 展览 photography 摄影 艺术家",
+      "keywords": "Fellowship fellowship.xyz 策展 gallery 展覽 photography 攝影 藝術家",
       "url": "https://daily.xyz/exhibitions",
       "type": [
-        "AI 艺术 · 数字艺术策展",
+        "AI 藝術 · 數字藝術策展",
         "AI art · Digital art curation"
       ],
       "name": "Daily by Fellowship",
       "description": [
-        "通过艺术家专题与线上展览，探索 AI 与数字艺术的当代表达，沿着作品与创作者继续深入。",
+        "通過藝術家專題與線上展覽，探索 AI 與數字藝術的當代表達，沿著作品與創作者繼續深入。",
         "Explore contemporary AI and digital art through artist-focused projects and online exhibitions, following the work back to its creators."
       ],
       "domain": "daily.xyz",
@@ -377,7 +377,7 @@
         "https://daily.xyz/exhibitions"
       ],
       "access": [
-        "公开作品与官方档案",
+        "公開作品與官方檔案",
         "Public works & official archive"
       ],
       "logo": {
@@ -404,20 +404,20 @@
       "url": "https://artefact-ai-film-festival.com/gallery",
       "domain": "artefact-ai-film-festival.com",
       "type": [
-        "AI 短片竞赛与电影画廊",
+        "AI 短片競賽與電影畫廊",
         "AI short-film festival & gallery"
       ],
       "description": [
-        "由 Artefact 与 mk2 发起的 AI 电影节。官方电影画廊提供类型与 AI 技法筛选，适合沿着创作方式寻找短片与导演。",
+        "由 Artefact 與 mk2 發起的 AI 電影節。官方電影畫廊提供類型與 AI 技法篩選，適合沿著創作方式尋找短片與導演。",
         "An AI film festival launched by Artefact with mk2. Its official gallery offers genre and AI-technique filters for exploring films and filmmaking approaches."
       ],
-      "keywords": "Artefact mk2 AI 电影节 短片 影展 导演 生成技术 festival film gallery cinema shorts techniques",
+      "keywords": "Artefact mk2 AI 電影節 短片 影展 導演 生成技術 festival film gallery cinema shorts techniques",
       "sourceUrls": [
         "https://artefact-ai-film-festival.com/gallery",
         "https://www.artefact.com/news/artefact-ai-film-festival-winners-of-the-2nd-edition-revealed/"
       ],
       "access": [
-        "节目与画廊入口可公开浏览；片目和播放权限以当届页面为准。",
+        "節目與畫廊入口可公開瀏覽；片目和播放權限以當屆頁面為準。",
         "Programme and gallery pages are public; film listings and playback availability depend on the edition."
       ],
       "logo": {
@@ -444,15 +444,15 @@
     {
       "id": "artbreeder",
       "category": "community",
-      "keywords": "GAN blend remix 图像 混合 portrait landscape 协作",
+      "keywords": "GAN blend remix 圖像 混合 portrait landscape 協作",
       "url": "https://www.artbreeder.com/browse",
       "type": [
-        "图像实验 · 协作创作社区",
+        "圖像實驗 · 協作創作社區",
         "Image experiments · Creative community"
       ],
       "name": "Artbreeder",
       "description": [
-        "浏览社区图像与标签，探索图像混合、变体与协作式创作，也可从主题竞赛中发现不同的视觉实验。",
+        "瀏覽社區圖像與標籤，探索圖像混合、變體與協作式創作，也可從主題競賽中發現不同的視覺實驗。",
         "Browse community images and tags, explore image blending and variations, and discover visual experiments through themed contests."
       ],
       "domain": "artbreeder.com",
@@ -461,7 +461,7 @@
         "https://www.artbreeder.com/browse"
       ],
       "access": [
-        "公开浏览 · 创作需账号",
+        "公開瀏覽 · 創作需賬號",
         "Browse publicly · Account to create"
       ],
       "logo": {
@@ -483,15 +483,15 @@
     {
       "id": "reply",
       "category": "film",
-      "keywords": "微电影 short cinema 电影节 awards festival 获奖",
+      "keywords": "微電影 short cinema 電影節 awards festival 獲獎",
       "url": "https://aiff.reply.com/",
       "type": [
-        "国际电影节 · 入围作品",
+        "國際電影節 · 入圍作品",
         "International festival · Finalist films"
       ],
       "name": "Reply AI Film Festival",
       "description": [
-        "通过入围短片、获奖作品与创作者介绍，观察 AI 影像如何发展出不同的叙事语言。",
+        "通過入圍短片、獲獎作品與創作者介紹，觀察 AI 影像如何發展出不同的敘事語言。",
         "Discover new storytelling voices through finalist shorts, award-winning films and creator profiles from an international AI film festival."
       ],
       "domain": "aiff.reply.com",
@@ -500,7 +500,7 @@
         "https://aiff.reply.com/"
       ],
       "access": [
-        "节目与入围影片入口",
+        "節目與入圍影片入口",
         "Programme & finalist films"
       ],
       "logo": {
@@ -527,21 +527,21 @@
       "url": "https://lumenprize.org/winners-archive",
       "domain": "lumenprize.org",
       "type": [
-        "数字艺术奖项与作品档案",
+        "數字藝術獎項與作品檔案",
         "Digital art prize & archive"
       ],
       "description": [
-        "按历届奖项阅读数字艺术作品与艺术家实践，覆盖 AI、生成艺术、动态影像和装置；档案也收录非 AI 数字艺术。",
+        "按歷屆獎項閱讀數字藝術作品與藝術家實踐，覆蓋 AI、生成藝術、動態影像和裝置；檔案也收錄非 AI 數字藝術。",
         "Discover artists and projects across AI, generative art, moving image and installation through the winners archive, which also includes digital art made without AI."
       ],
-      "keywords": "Lumen Prize 流明 奖项 档案 艺术家 数字艺术 生成艺术 装置 影像 digital art award archive installation computational",
+      "keywords": "Lumen Prize 流明 獎項 檔案 藝術家 數字藝術 生成藝術 裝置 影像 digital art award archive installation computational",
       "sourceUrls": [
         "https://lumenprize.org/winners-archive",
         "https://lumenprize.org/about-the-prize",
         "https://lumenprize.org/ai-artists"
       ],
       "access": [
-        "作品介绍与历届档案可公开浏览。",
+        "作品介紹與歷屆檔案可公開瀏覽。",
         "Artwork profiles and the winners archive are publicly browsable."
       ],
       "logo": {
@@ -573,19 +573,19 @@
       "url": "https://civitai.com/",
       "domain": "civitai.com",
       "type": [
-        "模型与创作者社区",
+        "模型與創作者社區",
         "Models & creator community"
       ],
       "description": [
-        "从创作者图像、视频和模型页面发现新的视觉语言，查看作品背后的模型与生成资料，也可通过社区文章继续学习。",
+        "從創作者圖像、視頻和模型頁面發現新的視覺語言，查看作品背後的模型與生成資料，也可通過社區文章繼續學習。",
         "Explore creator images, videos and model pages, then follow the generation details and community articles behind the work."
       ],
-      "keywords": "Civitai 模型 社区 作品 图像 视频 LoRA Stable Diffusion Flux community models images videos articles",
+      "keywords": "Civitai 模型 社區 作品 圖像 視頻 LoRA Stable Diffusion Flux community models images videos articles",
       "sourceUrls": [
         "https://civitai.com/"
       ],
       "access": [
-        "公开浏览；部分内容与操作取决于账号及平台设置。",
+        "公開瀏覽；部分內容與操作取決於賬號及平台設置。",
         "Public browsing; some content and actions depend on account and platform settings."
       ],
       "logo": {
@@ -612,15 +612,15 @@
     {
       "id": "feral-file",
       "category": "curation",
-      "keywords": "计算 computational generative digital 展览 数字艺术 生成艺术",
+      "keywords": "計算 computational generative digital 展覽 數字藝術 生成藝術",
       "url": "https://feralfile.com/exhibitions",
       "type": [
-        "计算艺术 · 生成艺术策展",
+        "計算藝術 · 生成藝術策展",
         "Computational art · Curated exhibitions"
       ],
       "name": "Feral File",
       "description": [
-        "从策展展览认识计算艺术、生成系统与数字媒介的艺术实践。内容涵盖更广泛的数字艺术，并不限于 AI。",
+        "從策展展覽認識計算藝術、生成系統與數字媒介的藝術實踐。內容涵蓋更廣泛的數字藝術，並不限於 AI。",
         "Discover artistic practices in computational art, generative systems and digital media through curated exhibitions. Its scope extends beyond AI art."
       ],
       "domain": "feralfile.com",
@@ -629,7 +629,7 @@
         "https://feralfile.com/exhibitions"
       ],
       "access": [
-        "公开作品与官方档案",
+        "公開作品與官方檔案",
         "Public works & official archive"
       ],
       "logo": {
@@ -650,26 +650,26 @@
     },
     {
       "id": "modelscope",
-      "name": "魔搭创空间 · ModelScope",
+      "name": "魔搭創空間 · ModelScope",
       "category": "learning",
       "region": "zh",
       "url": "https://modelscope.cn/studios",
       "domain": "modelscope.cn",
       "type": [
-        "开源模型与交互演示",
+        "開源模型與交互演示",
         "Open models & interactive demos"
       ],
       "description": [
-        "浏览社区发布的 AI 应用演示，探索图像、视频与声音生成的不同方法，适合把作品灵感延伸到技术与流程学习。",
+        "瀏覽社區發佈的 AI 應用演示，探索圖像、視頻與聲音生成的不同方法，適合把作品靈感延伸到技術與流程學習。",
         "Browse community-published AI demos and explore approaches to image, video and audio generation, connecting artistic inspiration with technical learning."
       ],
-      "keywords": "魔搭 创空间 ModelScope Studios 开源 图像生成 视频生成 声音生成 demos open source models",
+      "keywords": "魔搭 創空間 ModelScope Studios 開源 圖像生成 視頻生成 聲音生成 demos open source models",
       "sourceUrls": [
         "https://modelscope.cn/studios",
         "https://www.modelscope.cn/aigc"
       ],
       "access": [
-        "演示目录公开；运行条件与登录要求依应用而异。",
+        "演示目錄公開；運行條件與登錄要求依應用而異。",
         "Public demo directory; availability and sign-in requirements vary by app."
       ],
       "logo": {
@@ -684,7 +684,7 @@
       },
       "checkedAt": "2026-10-20",
       "displayName": [
-        "魔搭创空间",
+        "魔搭創空間",
         "ModelScope Studios"
       ]
     },
@@ -696,21 +696,21 @@
       "url": "https://comfyanonymous.github.io/ComfyUI_examples/",
       "domain": "comfyanonymous.github.io",
       "type": [
-        "官方工作流与创作示例",
+        "官方工作流與創作示例",
         "Official workflow examples"
       ],
       "description": [
-        "从官方示例拆解图像与视频生成流程。示例图片内嵌工作流，可在 ComfyUI 中载入，研究构图、控制与模型组合。",
+        "從官方示例拆解圖像與視頻生成流程。示例圖片內嵌工作流，可在 ComfyUI 中載入，研究構圖、控制與模型組合。",
         "Study official image and video workflows. Example images carry workflow metadata that can be loaded in ComfyUI to explore composition, control and model combinations."
       ],
-      "keywords": "ComfyUI Comfy 官方 工作流 示例 节点 图像 视频 workflow examples nodes controlnet learning",
+      "keywords": "ComfyUI Comfy 官方 工作流 示例 節點 圖像 視頻 workflow examples nodes controlnet learning",
       "sourceUrls": [
         "https://comfyanonymous.github.io/ComfyUI_examples/",
         "https://github.com/Comfy-Org/ComfyUI",
         "https://comfy.org/"
       ],
       "access": [
-        "示例可公开阅读；运行工作流需准备相应软件与模型。",
+        "示例可公開閱讀；運行工作流需準備相應軟件與模型。",
         "Examples are public; running workflows requires the relevant software and models."
       ],
       "logo": {
@@ -742,20 +742,20 @@
       "url": "https://huggingface.co/spaces?category=image-generation",
       "domain": "huggingface.co",
       "type": [
-        "开放模型演示与实验资源",
+        "開放模型演示與實驗資源",
         "Open model demos & experiments"
       ],
       "description": [
-        "探索社区公开的图像生成与视频实验，比较不同模型的表达方式，并查阅演示代码；这是创作技术入口，非专门的艺术画廊。",
+        "探索社區公開的圖像生成與視頻實驗，比較不同模型的表達方式，並查閱演示代碼；這是創作技術入口，非專門的藝術畫廊。",
         "Explore public image-generation and video experiments, compare model aesthetics and inspect demo code. A creative technology resource rather than a dedicated art gallery."
       ],
-      "keywords": "Hugging Face Spaces 开源 公开 模型 演示 图像 视频 代码 open source demos image video generative learning",
+      "keywords": "Hugging Face Spaces 開源 公開 模型 演示 圖像 視頻 代碼 open source demos image video generative learning",
       "sourceUrls": [
         "https://huggingface.co/spaces?category=image-generation",
         "https://huggingface.co/docs/hub/spaces-overview"
       ],
       "access": [
-        "公开演示可浏览；可用性、排队与账号要求由具体 Space 决定。",
+        "公開演示可瀏覽；可用性、排隊與賬號要求由具體 Space 決定。",
         "Public demos can be explored; availability, queues and account requirements vary by Space."
       ],
       "logo": {
